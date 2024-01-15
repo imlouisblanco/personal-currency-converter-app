@@ -13,11 +13,10 @@ const MoneyConverter = () => {
   };
 
   const getResult = async () => {
-    console.log("baseValue:", baseValue);
     const response = await fetch(`/api/money?value=${baseValue}&baseType=BRL`);
     const data = await response.json();
 
-    setResult(data.result)
+    setResult(data.result);
   };
 
   return (
@@ -26,6 +25,7 @@ const MoneyConverter = () => {
       <div className="flex flex-col my-2">
         <label htmlFor="baseValue">Initial</label>
         <input
+          className="bg-white dark:bg-slate-700 text-white"
           onChange={(event) => handleBaseValue(event.target.value)}
           id="baseValue"
           type="text"
@@ -35,6 +35,7 @@ const MoneyConverter = () => {
         <div className="flex flex-col my-2">
           <label htmlFor="result">Result</label>
           <input
+            className="bg-white dark:bg-slate-700 text-white"
             readOnly
             id="result"
             type="text"
