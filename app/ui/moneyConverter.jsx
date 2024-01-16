@@ -7,8 +7,6 @@ const MoneyConverter = () => {
   const [result, setResult] = useState("");
 
   const handleBaseValue = (value) => {
-    console.log(value);
-
     setBaseValue(value);
   };
 
@@ -23,9 +21,9 @@ const MoneyConverter = () => {
     <section>
       <p>🇧🇷BRL to 🇨🇱 CLP</p>
       <div className="flex flex-col my-2">
-        <label htmlFor="baseValue">Initial</label>
+        <label htmlFor="baseValue">Value</label>
         <input
-          className="bg-white dark:bg-slate-700 text-white"
+          className="bg-white dark:bg-slate-700 dark:text-white"
           onChange={(event) => handleBaseValue(event.target.value)}
           id="baseValue"
           type="text"
@@ -35,7 +33,7 @@ const MoneyConverter = () => {
         <div className="flex flex-col my-2">
           <label htmlFor="result">Result</label>
           <input
-            className="bg-white dark:bg-slate-700 text-white"
+            className="bg-white dark:bg-slate-700 dark:text-white"
             readOnly
             id="result"
             type="text"

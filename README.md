@@ -23,3 +23,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Pending Work
 - Improve code quality
 - Support more currency
+- Develop more validations
