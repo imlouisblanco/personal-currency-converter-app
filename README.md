@@ -19,3 +19,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Pending Work
+- Improve code quality
+- Support more currency
